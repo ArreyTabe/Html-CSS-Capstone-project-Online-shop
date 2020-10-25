@@ -20,6 +20,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
     line-height: 1;
+    overflow-x: hidden;
 }
 
 ol, ul {
@@ -48,6 +49,10 @@ header
 
 .nav_ {
     background: #353535;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    border-radius: 3px;
 }
 
 .nav-ul a {
@@ -78,6 +83,28 @@ header
     color: #f1880f;
     text-decoration: none;
 }
+
+/*
+footer
+*/
+
+.navbar ul {
+    display: flex;
+    background: #CB5769;
+    justify-content: space-between;
+    flex-basis: 100%;
+    padding: .8rem;
+    border-radius: 5px;
+}
+.navbar a {
+    text-decoration: none;
+    color: rgb(46, 43, 46);
+}
+.navbar a:hover {
+    text-decoration: underline;
+    text-decoration-color: #cbcd5abb
+}
+
 
 /*
 =======================
@@ -151,10 +178,30 @@ main
     .search-category {
         padding-top: 3rem;
     }
-    .crop-categories img {
-        width: 150px;
-        height: 120px;
+    .crop-categories {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 2px 20px 10px 20px
     }
+    .crop_cover_info {
+        display: flex;
+        flex-direction: column;
+    }
+    .crop-categories img {
+        width: 100%;
+    }
+    .category_name {
+        color: #fc1d4d;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .category_name:hover {
+        color: #252525;
+        text-decoration: none;
+    }
+ 
 }
 
 /*
