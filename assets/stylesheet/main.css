@@ -151,6 +151,10 @@ main
     .search-category {
         padding-top: 3rem;
     }
+    .crop-categories img {
+        width: 150px;
+        height: 120px;
+    }
 }
 
 /*
