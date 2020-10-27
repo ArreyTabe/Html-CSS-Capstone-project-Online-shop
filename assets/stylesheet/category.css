@@ -114,3 +114,34 @@ h1 a:hover {
     padding: 3px;
     color: #fff;
 }
+
+
+
+/*
+=======================
+tablet and large screen view
+=======================
+*/
+
+@media screen and (min-width: 768px) {
+    .crop-items {
+        gap: 2rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+         
+       
+    }
+    .crop-categories-dem {
+        margin-left: 2rem;
+    }
+    h1 a {
+     color: #001aff;
+        font-size: 34px;
+    }
+  
+  .c-item img {
+      width: 100%;
+  }
+ 
+
+}
