@@ -54,7 +54,7 @@ table {
     padding-bottom: 3rem;
     padding-top: 1rem;
     margin-bottom: 1rem;
-   padding-left: 10px;
+    padding-left: 10px;
 }
 
 .homepage, .categories-page {
@@ -76,7 +76,7 @@ h1 a:hover {
     color: #fc1d4d;
 }
 
- h4 {
+h4 {
     margin-top: 15px;
     text-align: center;
     margin-bottom: 10px;
@@ -96,8 +96,8 @@ h1 a:hover {
     display: flex;
     flex-direction: row;
     width: 75%;
-   
 }
+
 .crop_price :first-child {
     width: 35%;
     background: #c92929;
@@ -105,6 +105,7 @@ h1 a:hover {
     padding: 3px;
     color: #fff;
 }
+
 .crop_price :nth-child(2) {
     width: 60%;
     background: #c92929;
@@ -114,8 +115,6 @@ h1 a:hover {
     padding: 3px;
     color: #fff;
 }
-
-
 
 /*
 =======================
@@ -128,20 +127,15 @@ tablet and large screen view
         gap: 2rem;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-         
-       
     }
     .crop-categories-dem {
         margin-left: 2rem;
     }
     h1 a {
-     color: #001aff;
+        color: #001aff;
         font-size: 34px;
     }
-  
-  .c-item img {
-      width: 100%;
-  }
- 
-
+    .c-item img {
+        width: 100%;
+    }
 }
