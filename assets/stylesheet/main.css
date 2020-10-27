@@ -1,8 +1,4 @@
-
-@import "category.css"; 
-
-
-
+@import "category.css";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -101,15 +97,16 @@ footer
     padding: .8rem;
     border-radius: 5px;
 }
+
 .navbar a {
     text-decoration: none;
     color: rgb(46, 43, 46);
 }
+
 .navbar a:hover {
     text-decoration: underline;
     text-decoration-color: #cbcd5abb
 }
-
 
 /*
 =======================
@@ -158,6 +155,9 @@ header
 main
 =======================
 */
+    .bgscreen-top-head {
+        display: none;
+    }
     .search-info {
         display: flex;
         flex-direction: column;
@@ -212,10 +212,9 @@ main
         gap: 2rem;
         margin: 2px 20px 10px 20px
     }
-    .crop-items img{
+    .crop-items img {
         width: 100%;
     }
- 
 }
 
 /*
@@ -225,12 +224,113 @@ tablet and large screen view
 */
 
 @media screen and (min-width: 768px) {
+    .nav-ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .7rem;
+    }
+    .nav-ul a {
+        font-size: 18px;
+    }
+    /* header */
+    .post-ad-item {
+        display: block;
+    }
     .search-category {
-        background-image: url("../images/search-img.png");
-        background-repeat: repeat;
-        background-position: 20% 10%;
-        background-size: contain;
-        padding-top: 10rem;
+        padding-top: 13rem;
         background-color: #CB5769;
+        position: relative;
+    }
+    .bgscreen-top-head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        margin-left: -50%;
+        top: 50%;
+        margin-top: -50px;
+        color: #fff;
+    }
+    .logo-s {
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 10px;
+        text-decoration: none;
+    }
+    .logo-s:hover {
+        text-decoration: none;
+        color: #535357;
+    }
+    .text-impressive {
+        color: #0c0c0e;
+    }
+    .search-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .product-search_it {
+        position: relative;
+        margin-bottom: 1rem;
+    }
+    .nput_prod {
+        border-radius: 10px;
+        padding: 10px;
+        border: 2px solid #353535;
+        width: 450px;
+        outline: none;
+    }
+    .search-now_ {
+        position: absolute;
+        left: 26rem;
+        top: 12px;
+    }
+    .customer-info {
+        margin-right: 25px;
+        color: #fff;
+        display: flex;
+    }
+    .for_customers {
+        color: #080404;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .customer-info :first-child {
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    .for_customers:hover {
+        color: #525052;
+    }
+    .crop-categories {
+        display: grid;
+        margin: 2px 20px 10px 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    .crop-categories img {
+        width: 100%;
+    }
+    .crop-type {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .category_name {
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: #ff5252;
+        font-size: 32px;
+        text-decoration: none;
+    }
+    .see-the-crops {
+        width: 100%;
+        font-size: 16px;
+        padding-top: 10px;
     }
 }
