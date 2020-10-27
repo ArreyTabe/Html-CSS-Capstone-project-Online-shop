@@ -57,9 +57,13 @@ To get a local copy of this repository up and running follow these simple steps:
 
 ## Live Demo
 
-[Live Demo Link](https://arreytabe.github.io/The-Next-Web-Clone/)
+[Live Demo Link](https://raw.githack.com/ArreyTabe/online-shop/shop-features/category.html)
 
 **See the page via the link above**
+
+
+## Project presentation
+[project presentation Link](https://youtu.be/i9HHoU6F_vg)
 
 
 👤 **Arrey Tabe**
