@@ -1,91 +1,10 @@
 @import "category.css";
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -95,17 +14,7 @@ video {
 
 /* HTML5 display-role reset for older browsers */
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -114,20 +23,15 @@ body {
   overflow-x: hidden;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
+blockquote::before, blockquote::after, q::before, q::after {
   content: '';
   content: none;
 }
@@ -232,60 +136,48 @@ header
     align-items: center;
     padding: 0.7rem;
   }
-
   .nav-ul a {
     font-size: 15px;
   }
-
   .nav-ul-main {
     display: flex;
   }
-
   .sub-nav-ul-items {
     display: flex;
   }
-
   .logo {
     width: 75px;
     height: 55px;
   }
-
   .post-ad-item {
     display: none;
   }
-
   .item-icon {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-
   .item-icon a {
     margin-left: 0.5rem;
   }
-
   /*
 =======================
 main
 =======================
 */
-
   .bgscreen-top-head {
     display: none;
   }
-
   .search-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-
   .product-search_it {
     position: relative;
     margin-bottom: 1rem;
   }
-
   .nput_prod {
     border-radius: 10px;
     padding: 10px;
@@ -293,52 +185,46 @@ main
     width: 450px;
     outline: none;
   }
-
   .search-now_ {
     position: absolute;
     left: 26rem;
     top: 12px;
   }
-
   .search-category {
     padding-top: 3rem;
   }
-
   .crop-categories {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin: 2px 20px 10px 20px;
   }
-
   .crop_cover_info {
     display: flex;
     flex-direction: column;
+    height: 380px;
   }
-
   .crop-categories img {
     width: 100%;
+    height: 200px;
   }
-
   .category_name {
     color: #fc1d4d;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
+    margin-bottom: 10px;
   }
-
   .category_name:hover {
-    color: #252525;
+    color: #6d6b6b;
     text-decoration: none;
   }
-
   .crop-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin: 2px 20px 10px 20px;
   }
-
   .crop-items img {
     width: 100%;
   }
@@ -350,6 +236,7 @@ tablet and large screen view
 =======================
 */
 
+/*
 @media screen and (min-width: 768px) {
   .nav-ul {
     display: flex;
@@ -357,22 +244,20 @@ tablet and large screen view
     align-items: center;
     padding: 0.7rem;
   }
-
   .nav-ul a {
     font-size: 18px;
   }
-
   /* header */
+
+/*
   .post-ad-item {
     display: block;
   }
-
   .search-category {
     padding-top: 13rem;
     background-color: #cb5769;
     position: relative;
   }
-
   .bgscreen-top-head {
     display: flex;
     flex-direction: column;
@@ -386,7 +271,6 @@ tablet and large screen view
     margin-top: -50px;
     color: #fff;
   }
-
   .logo-s {
     color: #fff;
     font-size: 24px;
@@ -394,27 +278,22 @@ tablet and large screen view
     padding-bottom: 10px;
     text-decoration: none;
   }
-
   .logo-s:hover {
     text-decoration: none;
     color: #535357;
   }
-
   .text-impressive {
     color: #0c0c0e;
   }
-
   .search-info {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
   }
-
   .product-search_it {
     position: relative;
     margin-bottom: 1rem;
   }
-
   .nput_prod {
     border-radius: 10px;
     padding: 10px;
@@ -422,62 +301,168 @@ tablet and large screen view
     width: 450px;
     outline: none;
   }
-
   .search-now_ {
     position: absolute;
     left: 26rem;
     top: 12px;
   }
-
   .customer-info {
     margin-right: 25px;
     color: #fff;
     display: flex;
   }
-
   .for_customers {
     color: #080404;
     font-weight: bold;
     text-decoration: none;
   }
-
   .customer-info :first-child {
     margin-right: 10px;
     font-weight: bold;
   }
-
   .for_customers:hover {
     color: #525052;
   }
-
   .crop-categories {
     display: grid;
     margin: 2px 20px 10px 20px;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+    background: #ecebeb;
   }
-
   .crop-categories img {
-    width: 100%;
+    width: 80%;
+    height: 200px;
   }
-
   .crop-type {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: baseline;
+    border: 2px solid#000;
   }
-
   .category_name {
-    margin-bottom: 15px;
     font-weight: bold;
-    color: #ff5252;
+    color: #cf5b6c;
     font-size: 32px;
     text-decoration: none;
+    text-transform: uppercase;
   }
-
+  .category_name:hover {
+    color: #9c9b9b;
+    text-decoration: none;
+  }
   .see-the-crops {
-    width: 100%;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
     font-size: 16px;
     padding-top: 10px;
   }
 }
+*/
+
+.c-crop {
+  color: #464545;
+}
+
+.c-crop:hover {
+  color: #fd7d7d;
+}
+
+.c-crop-sample {
+  display: flex;
+}
+
+.c-crop-sample img {
+  width: 30%;
+  height: auto;
+}
+
+.cash-text {
+  color: #f73548;
+}
+
+.cash-text:hover {
+  text-decoration: none;
+  color: #464545;
+  font-weight: bold;
+}
+
+.qnty-price {
+  background-color: #fc1d4d;
+  margin-top: 5px;
+  max-width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.qnty::after {
+  content: "=";
+  color: #000;
+  margin-left: 30px;
+}
+
+.f-crops-fruits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-crops {
+  border: 1px solid #696666;
+  width: 320px;
+  height: 400px;
+  padding: 20px;
+}
+
+.fruits {
+  border: 1px solid #696666;
+  width: 320px;
+  height: 400px;
+  padding: 3px;
+}
+
+.fruits, .vegetables {
+  margin-left: 40px;
+}
+
+.the-crop-name {
+  color: #464545;
+}
+
+.the-crop-name:hover {
+  color: #f73548;
+  text-decoration: none;
+}
+
+.f-crops-fruits img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.crop-p {
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.spices-veggies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spices, .vegetables {
+  border: 1px solid #696666;
+  width: 320px;
+  height: 400px;
+  padding: 3px;
+}
+
+
+
