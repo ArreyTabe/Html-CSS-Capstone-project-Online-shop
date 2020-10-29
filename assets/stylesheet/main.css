@@ -362,107 +362,163 @@ tablet and large screen view
 }
 */
 
-.c-crop {
-  color: #464545;
+/*
+=======================
+tablet and large screen view
+=======================
+*/
+
+@media screen and (min-width: 768px) {
+  .c-crop {
+    color: #464545;
+  }
+  .c-crop:hover {
+    color: #fd7d7d;
+  }
+  .c-crop-sample {
+    display: flex;
+  }
+  .c-crop-sample img {
+    width: 30%;
+    height: auto;
+  }
+  .cash-text {
+    color: #f73548;
+  }
+  .cash-text:hover {
+    text-decoration: none;
+    color: #464545;
+    font-weight: bold;
+  }
+  .qnty-price {
+    background-color: #fc1d4d;
+    margin-top: 5px;
+    max-width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .qnty::after {
+    content: "=";
+    color: #000;
+    margin-left: 30px;
+  }
+  .crp-cat-design {
+    background: #f1f1f1;
+  }
+  .f-crops-fruits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .food-crops {
+    border: 1px solid #696666;
+    width: 320px;
+    height: 400px;
+    padding: 20px;
+  }
+  .fruits {
+    border: 1px solid #696666;
+    width: 320px;
+    height: 400px;
+    padding: 3px;
+  }
+  .fruits, .vegetables {
+    margin-left: 40px;
+  }
+  .the-crop-name {
+    color: #464545;
+  }
+  .the-crop-name:hover {
+    color: #f73548;
+    text-decoration: none;
+  }
+  .f-crops-fruits img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .crop-p {
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+  .spices-veggies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .spices, .vegetables {
+    border: 1px solid #696666;
+    width: 320px;
+    height: 400px;
+    padding: 3px;
+  }
+  /* footer */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+  }
+  .foot-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .comp-name {
+    margin-left: 150px;
+    color: #9e9b9d;
+    font-weight: bold;
+  }
+  .comp-name:hover {
+    color: #fa5353;
+    text-decoration: none;
+  }
+  .just-lorem {
+    margin-left: 200px;
+    line-height: 1.5;
+    color: #9e9b9d;
+  }
+  .footer-cat {
+    margin-left: 100px;
+  }
+  .cat-foot-nav a {
+    color: #9e9b9d;
+    line-height: 1.5;
+  }
+  .cat-foot-nav a:hover {
+    text-decoration: none;
+    color: #f37171;
+  }
+  .hr-cat {
+    width: 170px;
+    margin-left: 0;
+    font-weight: bolder;
+    border-top: 1px solid red;
+  }
+  .foot-cat-items {
+    text-transform: uppercase;
+    color: #f73548;
+  }
+  .foot-cat-items:hover {
+    color: #979497;
+    text-decoration: none;
+  }
+  .hr-fcopy {
+    border-top: 1px solid #c0bebe;
+    width: 90%;
+  }
+  .copyright-info p {
+    color: #9e9b9d;
+    font-size: 14px;
+  }
 }
-
-.c-crop:hover {
-  color: #fd7d7d;
-}
-
-.c-crop-sample {
-  display: flex;
-}
-
-.c-crop-sample img {
-  width: 30%;
-  height: auto;
-}
-
-.cash-text {
-  color: #f73548;
-}
-
-.cash-text:hover {
-  text-decoration: none;
-  color: #464545;
-  font-weight: bold;
-}
-
-.qnty-price {
-  background-color: #fc1d4d;
-  margin-top: 5px;
-  max-width: 30%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 40px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.qnty::after {
-  content: "=";
-  color: #000;
-  margin-left: 30px;
-}
-
-.f-crops-fruits {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.food-crops {
-  border: 1px solid #696666;
-  width: 320px;
-  height: 400px;
-  padding: 20px;
-}
-
-.fruits {
-  border: 1px solid #696666;
-  width: 320px;
-  height: 400px;
-  padding: 3px;
-}
-
-.fruits, .vegetables {
-  margin-left: 40px;
-}
-
-.the-crop-name {
-  color: #464545;
-}
-
-.the-crop-name:hover {
-  color: #f73548;
-  text-decoration: none;
-}
-
-.f-crops-fruits img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.crop-p {
-  line-height: 1.5;
-  margin-top: 10px;
-}
-
-.spices-veggies {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.spices, .vegetables {
-  border: 1px solid #696666;
-  width: 320px;
-  height: 400px;
-  padding: 3px;
-}
-
-
-
