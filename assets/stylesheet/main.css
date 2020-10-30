@@ -122,15 +122,19 @@ main
 .bgscreen-top-head {
   display: none;
 }
+
 .crop-cat {
   margin-top: 5rem;
 }
+
 .c-crop-sample {
   display: flex;
   flex-direction: column;
 }
+
 .c-crop-sample img {
-  width: 30%;
+  margin-top: 1rem;
+  width: 60%;
   height: auto;
   margin-left: 2rem;
 }
@@ -138,25 +142,31 @@ main
 .c-crop {
   color: #464545;
 }
+
 .c-crop:hover {
   color: #fd7d7d;
 }
+
 .see-the-crops {
   margin-left: 2rem;
   margin-top: 1rem;
 }
+
 .see-the-crops p {
   display: flex;
   flex-wrap: wrap;
 }
+
 .cash-text {
   color: #f73548;
 }
+
 .cash-text:hover {
   text-decoration: none;
   color: #464545;
   font-weight: bold;
 }
+
 .qnty-price {
   background-color: #fc1d4d;
   margin-top: 5px;
@@ -167,6 +177,144 @@ main
   height: 40px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+.crp-cat-design {
+  background: #f1f1f1;
+}
+
+.f-crops-fruits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-crops {
+  border: 1px solid #696666;
+  width: 300px;
+  height: 400px;
+  padding-bottom: 2px;
+}
+
+.fruits {
+  border: 1px solid #696666;
+  width: 320px;
+  height: 400px;
+  padding-bottom: 2px;
+}
+
+.fruits, .vegetables {
+  margin-left: 10px;
+}
+
+.the-crop-name {
+  color: #464545;
+}
+
+.the-crop-name:hover {
+  color: #f73548;
+  text-decoration: none;
+}
+
+.f-crops-fruits img {
+  max-width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+
+.crop-p {
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.spices-veggies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spices, .vegetables {
+  border: 1px solid #696666;
+  width: 320px;
+  height: 400px;
+  padding: 3px;
+}
+
+/* footer */
+
+.footer {
+  height: 18rem;
+  margin-top: 2rem;
+}
+
+.foot-1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.comp-name {
+  color: #9e9b9d;
+  font-weight: bold;
+}
+
+.comp-name:hover {
+  color: #fa5353;
+  text-decoration: none;
+}
+
+.just-lorem {
+  margin-left: 20px;
+  line-height: 1.3;
+  color: #9e9b9d;
+  margin-top: .6rem;
+}
+
+.footer-cat {
+  margin-left: 50px;
+}
+
+.cat-foot-nav a {
+  color: #9e9b9d;
+  line-height: 1.3;
+}
+
+.cat-foot-nav a:hover {
+  text-decoration: none;
+  color: #f37171;
+}
+
+.hr-cat {
+  width: 170px;
+  margin-left: 0;
+  font-weight: bolder;
+  border-top: 1px solid red;
+}
+
+.foot-cat-items {
+  text-transform: uppercase;
+  color: #f73548;
+}
+
+.foot-cat-items:hover {
+  color: #979497;
+  text-decoration: none;
+}
+
+.hr-fcopy {
+  border-top: 1px solid #c0bebe;
+  width: 90%;
+}
+
+.copyright-info p {
+  color: #9e9b9d;
+  font-size: 12px;
 }
 
 /*
