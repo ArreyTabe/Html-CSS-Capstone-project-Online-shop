@@ -57,7 +57,7 @@ To get a local copy of this repository up and running follow these simple steps:
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/ArreyTabe/online-shop/shop-features/category.html)
+[Live Demo Link](https://raw.githack.com/ArreyTabe/online-shop/shop-features/index.html)
 
 **See the page via the link above**
 
