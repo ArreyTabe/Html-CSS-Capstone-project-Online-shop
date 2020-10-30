@@ -14,11 +14,11 @@ We build an online shop for agricultural products, from cash crops, food crops, 
 
 **Mobile view screenShot**
 
-![moblie view](assets/images/project-screenshot/mob-view.png)
+![moblie view](assets/images/project-screenshot/mob-view-new.png)
 
 **Tablet view screenShot &  Laptop view screenShot**
 
-![tablet view, desktop view](assets/images/project-screenshot/tab-view.png)
+![tablet view, desktop view](assets/images/project-screenshot/tab-lap-view.png)
 
 
 ## Features of The Online Shop  Websites:
