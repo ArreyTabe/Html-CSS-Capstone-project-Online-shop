@@ -10,87 +10,7 @@ general  styles
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -100,17 +20,7 @@ video {
 
 /* HTML5 display-role reset for older browsers */
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -119,20 +29,15 @@ body {
   overflow-x: hidden;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
+blockquote::before, blockquote::after, q::before, q::after {
   content: '';
   content: none;
 }
@@ -142,99 +47,84 @@ table {
   border-spacing: 0;
 }
 
-.cat-links_ {
-  display: flex;
-  background: #080607;
-  padding-bottom: 3rem;
-  padding-top: 1rem;
-  margin-bottom: 1rem;
-  padding-left: 10px;
+.crop-search-result {
+  margin-top: 6rem;
+  padding: .3rem 1rem;
 }
 
-.homepage,
-.categories-page {
-  color: #da06a5;
+h1 {
+  font-size: 40px!important;
+  margin-bottom: 2rem!important;
 }
 
-.homepage:hover,
-.categories-page:hover {
-  text-decoration: none;
-  color: #a200ff;
+.available-crops {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 0 auto;
 }
 
-h1 a {
-  color: #424040;
-  font-weight: bold;
+.available-crops {
+  line-height: 1;
+  margin-top: 10px;
+  color: #7c7979;
 }
 
-h1 a:hover {
-  text-decoration: none;
-  color: #fc1d4d;
-}
-
-h4 {
-  margin-top: 15px;
-  text-align: center;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #fc1d4d;
-}
-
-.c-item {
+.k-onion {
+  padding: .3rem 1rem;
+  border: 1px solid #333;
   display: flex;
   flex-direction: column;
-  padding: 5px;
-  margin-top: 1px;
+  align-items: center;
+  justify-content: center;
 }
 
-.crop_price {
-  margin-top: 10px;
+.k-onion h2 {
+  color: #d35468;
+}
+
+.available-crops img {
+  width: 100%;
+  height: auto;
+}
+
+.qty-price {
+  margin-top: 1rem;
+  width: 50%;
+  background: #f36868;
   display: flex;
-  flex-direction: row;
-  width: 75%;
+  flex-direction: column;
 }
 
-.crop_price :first-child {
-  width: 35%;
-  background: #c92929;
-  text-align: center;
-  padding: 3px;
-  color: #fff;
+.qnty {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #fc6969;
 }
-
-.crop_price :nth-child(2) {
-  width: 60%;
-  background: #c92929;
-  border-left: 1px solid #fff;
-  border-left-color: #fff;
-  text-align: center;
-  padding: 3px;
-  color: #fff;
-}
-
-/*
-=======================
-tablet and large screen view
-=======================
-*/
+/* .cat-results {
+  display: none;
+} */
 
 @media screen and (min-width: 768px) {
-  .crop-items {
-    gap: 2rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  .available-crops {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+  }
+  /* .cat-results {
+    display: block;
+    display: flex;
+    flex-direction: row;
+  } */
+  .k-onion {
+    padding: .3rem 1rem;
+    border: 1px solid #333;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
   }
 
-  .crop-categories-dem {
-    margin-left: 2rem;
-  }
-
-  h1 a {
-    color: #001aff;
-    font-size: 34px;
-  }
-
-  .c-item img {
-    width: 100%;
-  }
+.available-crops img {
+  width: 100%;
+  height: auto;
+}
 }
