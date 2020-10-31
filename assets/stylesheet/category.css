@@ -10,87 +10,7 @@ general  styles
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -100,17 +20,7 @@ video {
 
 /* HTML5 display-role reset for older browsers */
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -119,20 +29,15 @@ body {
   overflow-x: hidden;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
+blockquote::before, blockquote::after, q::before, q::after {
   content: '';
   content: none;
 }
@@ -147,12 +52,10 @@ table {
     margin-top: 6rem;
     padding: 0.3rem 1rem;
   }
-
   .crop-search-result h1 {
     font-size: 40px !important;
     margin-bottom: 2rem !important;
   }
-
   .available-crops {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -162,7 +65,6 @@ table {
     margin-top: 10px;
     color: #7c7979;
   }
-
   .k-onion {
     padding: 0.3rem 1rem;
     border: 1px solid #333;
@@ -171,24 +73,22 @@ table {
     align-items: center;
     justify-content: center;
   }
-
   .k-onion h2 {
     color: #d35468;
   }
-
   .available-crops img {
     width: 100%;
     height: auto;
   }
-
   .qty-price {
     margin-top: 1rem;
-    width: 50%;
+    width: 10%;
     background: #f36868;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-
   .qnty {
     margin-bottom: 5px;
     border-bottom: 1px solid #fc6969;
@@ -204,7 +104,6 @@ table {
     padding-bottom: 2rem;
     padding-top: 2rem;
   }
-
   .crop-search-result h1 {
     font-size: 30px;
     color: #333;
@@ -213,13 +112,11 @@ table {
     margin-left: 15px;
     cursor: pointer;
   }
-
   .k-onion {
     border-top: 1px solid #d6d1d1;
     border-bottom: 1px solid #cccbcb;
     padding-bottom: 10px;
   }
-
   .k-onion h2 {
     text-align: center;
     margin-top: 10px;
@@ -227,41 +124,33 @@ table {
     color: rgb(61, 61, 61);
     cursor: pointer;
   }
-
   .img-info {
     display: flex;
     justify-content: center;
-    width: 60%;
     margin-top: 40px;
     margin-left: 30px;
   }
-
   .crop-img {
     border: 1px solid #bdbaba;
     padding: 5px;
   }
-
   .par-qty-price {
     display: flex;
     flex-direction: column;
-
-    /* align-items: stretch; */
-    flex-basis: 30%;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-left: 30px;
     line-height: 1.5;
     border: 1px solid #2c2c2c;
     padding: 5px;
   }
-
   .qty-price {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: #f86f6f;
     margin-top: 10px;
-    width: 60%;
+    text-align: center;
     color: #fff;
     font-weight: bold;
+    width: 30%;
+    align-self: center;
   }
 }
