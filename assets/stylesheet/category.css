@@ -56,15 +56,6 @@ table {
     font-size: 40px !important;
     margin-bottom: 2rem !important;
   }
-  .available-crops {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    margin: 0 auto;
-    line-height: 1;
-    margin-top: 10px;
-    color: #7c7979;
-  }
   .k-onion {
     padding: 0.3rem 1rem;
     border: 1px solid #333;
@@ -76,18 +67,26 @@ table {
   .k-onion h2 {
     color: #d35468;
   }
-  .available-crops img {
+  .img-info {
+   
     width: 100%;
-    height: auto;
+    padding-bottom: 3px;
+  }
+  .crop-img img {
+    width: 100%;
+    width: stretch;
+  }
+  .par-qty-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   .qty-price {
     margin-top: 1rem;
-    width: 10%;
+    width: 30%;
     background: #f36868;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    align-self: center;
   }
   .qnty {
     margin-bottom: 5px;

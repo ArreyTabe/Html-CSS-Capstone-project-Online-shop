@@ -37,26 +37,28 @@ blockquote::before, blockquote::after, q::before, q::after {
 }
 
 @font-face {
-  font-family:Gotham Bold;
+  font-family: Gotham Bold;
   src: url(/assets/fonts/Gotham\ Bold.otf);
   font-weight: 400;
 }
+
 @font-face {
-  font-family:Gotham Rounded Light;
+  font-family: Gotham Rounded Light;
   src: url(/assets/fonts/Gotham\ Rounded\ Light.otf);
 }
 
 @font-face {
-  font-family:HelveticaNeue-Bold;
+  font-family: HelveticaNeue-Bold;
   src: url(/assets/fonts/HelveticaNeue-Bold.otf);
 }
 
 @font-face {
-  font-family:HelveticaNeue-Light;
+  font-family: HelveticaNeue-Light;
   src: url(/assets/fonts/HelveticaNeue-Light.otf);
 }
+
 @font-face {
-  font-family:HelveticaNeue-Medium;
+  font-family: HelveticaNeue-Medium;
   src: url(/assets/fonts/HelveticaNeue-Medium.otf);
 }
 
@@ -65,18 +67,16 @@ blockquote::before, blockquote::after, q::before, q::after {
 }
 
 .gotham-light {
-  font-family:Gotham Rounded Light;
+  font-family: Gotham Rounded Light;
 }
 
 .helvetica-light {
-  font-family:HelveticaNeue-Light
+  font-family: HelveticaNeue-Light
 }
 
 .helvetica-bold {
-  font-family:HelveticaNeue-Bold;
+  font-family: HelveticaNeue-Bold;
 }
-
-
 
 table {
   border-collapse: collapse;
@@ -168,7 +168,9 @@ main
 }
 
 .crop-cat {
+  margin-left: 1rem;
   margin-top: 5rem;
+  
 }
 
 .c-crop-sample {
@@ -178,9 +180,9 @@ main
 
 .c-crop-sample img {
   margin-top: 1rem;
-  width: 60%;
-  height: auto;
-  margin-left: 2rem;
+  width: 90%;
+  height: 70%;
+  margin: 0 auto;
 }
 
 .c-crop {
@@ -261,16 +263,13 @@ main
 }
 
 .f-crops-fruits img {
-  max-width: 80%;
-  height: auto;
-  object-fit: cover;
+  max-width: 100%;
+  height: 50%;
+  margin: 0 auto;
 }
-
-/* .crop-p {
-  font-family: 'gotham-bold', sans-serif;
-  line-height: 1.5;
-  margin-top: 10px;
-} */
+.crop-p {
+  padding: .6rem;
+}
 
 .spices-veggies {
   display: flex;
