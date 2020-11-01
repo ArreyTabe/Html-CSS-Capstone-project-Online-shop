@@ -1,91 +1,10 @@
 @import "category.css";
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -95,17 +14,7 @@ video {
 
 /* HTML5 display-role reset for older browsers */
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -114,20 +23,15 @@ body {
   overflow-x: hidden;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
+blockquote::before, blockquote::after, q::before, q::after {
   content: '';
   content: none;
 }
@@ -159,19 +63,19 @@ q::after {
 }
 
 .gotham-bold {
-  font-family: Gotham Bold  Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-family: Gotham Bold Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 
 .gotham-light {
-  font-family: Gotham Rounded Light  Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-family: Gotham Rounded Light Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 
 .helvetica-light {
-  font-family: HelveticaNeue-Light  Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-family: HelveticaNeue-Light Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 
 .helvetica-bold {
-  font-family: HelveticaNeue-Bold  Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-family: HelveticaNeue-Bold Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 
 table {
@@ -255,8 +159,7 @@ main
 =======================
 */
 
-.search-category,
-.categories {
+.search-category, .categories {
   display: none;
 }
 
@@ -327,8 +230,6 @@ main
   width: 90%;
   height: 70%;
   margin-left: 20rem;
-
-  /* margin: .8rem auto; */
 }
 
 .c-crop {
@@ -339,7 +240,7 @@ main
   color: #c0bdbd;
 }
 
-.dropdown-cat button:focus + ul {
+.dropdown-cat button:focus+ul {
   opacity: 1;
   pointer-events: all;
   transform: translateY(0);
@@ -405,8 +306,7 @@ main
   padding-bottom: 2px;
 }
 
-.fruits,
-.vegetables {
+.fruits, .vegetables {
   margin-left: 10px;
 }
 
@@ -435,8 +335,7 @@ main
   align-items: center;
 }
 
-.spices,
-.vegetables {
+.spices, .vegetables {
   border: 1px solid #696666;
   width: 320px;
   height: 400px;
@@ -528,19 +427,15 @@ tablet and large screen view
     align-items: center;
     padding: 0.7rem;
   }
-
   .nav-ul a {
     font-size: 18px;
   }
-
   .post-ad-item {
     display: block;
   }
-
   .post-ad-btn {
     border: 1px solid #353535;
   }
-
   /* main */
   .search-category {
     display: block;
@@ -548,7 +443,6 @@ tablet and large screen view
     background-color: #cb5769;
     padding-bottom: 1rem;
   }
-
   .bgscreen-top-head {
     display: flex;
     align-items: center;
@@ -557,7 +451,6 @@ tablet and large screen view
     padding-bottom: 6rem;
     padding-top: 4rem;
   }
-
   .logo-s {
     color: #fff;
     font-size: 24px;
@@ -565,33 +458,27 @@ tablet and large screen view
     padding-bottom: 10px;
     text-decoration: none;
   }
-
   .logo-s:hover {
     text-decoration: none;
     color: #535357;
   }
-
   .text-impressive {
     color: #fff;
     font-weight: bold;
   }
-
   .search-info {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   .pick-cat-search {
     display: flex;
     padding: 1.5rem;
   }
-
   .dropdown-cat {
     height: 5vh;
     position: relative;
   }
-
   .dropdown-cat ul {
     position: absolute;
     background: #898b89;
@@ -605,7 +492,6 @@ tablet and large screen view
     transition: all 0.4s ease;
     transform: translateY(-10px);
   }
-
   .dropdown-cat button {
     background: #fff;
     border: none;
@@ -616,7 +502,6 @@ tablet and large screen view
     cursor: pointer;
     padding: 20px;
   }
-
   .nput_prod {
     color: #000;
     background: #fff;
@@ -626,7 +511,6 @@ tablet and large screen view
     margin-right: 0;
     outline: none;
   }
-
   .search-now_ {
     color: #ccc8c8;
     font-size: 50px;
@@ -634,50 +518,40 @@ tablet and large screen view
     padding: 1rem;
     background: #464545;
   }
-
   .dropdown-cat button:hover {
     color: #c0bdbd;
   }
-
-  .dropdown-cat button:focus + ul {
+  .dropdown-cat button:focus+ul {
     opacity: 1;
     pointer-events: all;
     transform: translateY(0);
   }
-
   .crop-cat {
     margin-top: 2rem;
     margin-left: 1rem;
   }
-
   .c-crop {
     color: #464545;
   }
-
   .c-crop:hover {
     color: #fd7d7d;
   }
-
   .c-crop-sample {
     display: flex;
     flex-direction: row;
   }
-
   .c-crop-sample img {
     width: 30%;
     height: auto;
   }
-
   .cash-text {
     color: #f73548;
   }
-
   .cash-text:hover {
     text-decoration: none;
     color: #464545;
     font-weight: bold;
   }
-
   .qnty-price {
     background-color: #fc1d4d;
     margin-top: 5px;
@@ -689,76 +563,61 @@ tablet and large screen view
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
   }
-
   .qnty::after {
     content: "=";
     color: #000;
     margin-left: 30px;
   }
-
   .crp-cat-design {
     background: #f1f1f1;
   }
-
   .f-crops-fruits {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   .food-crops {
     border: 1px solid #696666;
     width: 320px;
     height: 400px;
     padding: 20px;
   }
-
   .fruits {
     border: 1px solid #696666;
     width: 320px;
     height: 400px;
     padding: 3px;
   }
-
-  .fruits,
-  .vegetables {
+  .fruits, .vegetables {
     margin-left: 40px;
   }
-
   .the-crop-name {
     color: #464545;
   }
-
   .the-crop-name:hover {
     color: #f73548;
     text-decoration: none;
   }
-
   .f-crops-fruits img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
   }
-
   .crop-p {
     line-height: 1.5;
     margin-top: 10px;
   }
-
   .spices-veggies {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-  .spices,
-  .vegetables {
+  .spices, .vegetables {
     border: 1px solid #696666;
     width: 320px;
     height: 400px;
     padding: 3px;
   }
-
   /* footer */
   .footer {
     display: flex;
@@ -767,72 +626,59 @@ tablet and large screen view
     align-items: center;
     height: 350px;
   }
-
   .foot-1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
   .footer-logo {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
-
   .comp-name {
     margin-left: 150px;
     color: #9e9b9d;
     font-weight: bold;
   }
-
   .comp-name:hover {
     color: #fa5353;
     text-decoration: none;
   }
-
   .just-lorem {
     margin-left: 200px;
     line-height: 1.5;
     color: #9e9b9d;
   }
-
   .footer-cat {
     margin-left: 100px;
   }
-
   .cat-foot-nav a {
     color: #9e9b9d;
     line-height: 1.5;
   }
-
   .cat-foot-nav a:hover {
     text-decoration: none;
     color: #f37171;
   }
-
   .hr-cat {
     width: 170px;
     margin-left: 0;
     font-weight: bolder;
     border-top: 1px solid red;
   }
-
   .foot-cat-items {
     text-transform: uppercase;
     color: #f73548;
   }
-
   .foot-cat-items:hover {
     color: #979497;
     text-decoration: none;
   }
-
   .hr-fcopy {
     border-top: 1px solid #c0bebe;
     width: 90%;
   }
-
   .copyright-info p {
     color: #9e9b9d;
     font-size: 14px;
