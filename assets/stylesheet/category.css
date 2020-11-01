@@ -49,7 +49,7 @@ table {
 
 @media screen and (max-width: 768px) {
   .crop-search-result {
-    margin-top: 6rem;
+    margin-top: 3rem;
     padding: 0.3rem 1rem;
   }
   .crop-search-result h1 {
@@ -59,38 +59,58 @@ table {
   .k-onion {
     padding: 0.3rem 1rem;
     border: 1px solid #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
   .k-onion h2 {
     color: #d35468;
+    margin-bottom: 10px;
   }
   .img-info {
-   
     width: 100%;
     padding-bottom: 3px;
   }
   .crop-img img {
     width: 100%;
-    width: stretch;
+    margin-bottom: 10px;
   }
-  .par-qty-price {
+  .cust-interact {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: baseline;
   }
-  .qty-price {
-    margin-top: 1rem;
+  .order-qnt {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    width: 50%;
+  }
+  .qnty-price1 {
+    background: #fd6e6e;
+    border-radius: 5px;
+    color: #2e2d2d;
+    font-weight: bold;
+    padding: 5px;
+  }
+  .order-qnt {
     width: 30%;
-    background: #f36868;
-    text-align: center;
-    align-self: center;
+    border-radius: 10px;
+    outline: none;
   }
-  .qnty {
-    margin-bottom: 5px;
-    border-bottom: 1px solid #fc6969;
+  .order-qnt input {
+    width: 75%;
+    border: none;
+    background: #a3a1a1;
+    padding: 9px;
+    border-radius: 5px;
+    outline: none;
+  }
+  .btn {
+    padding: 5px;
+    background: #f86060;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+
   }
 }
 
