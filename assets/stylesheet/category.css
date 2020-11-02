@@ -1,0 +1,354 @@
+/*
+==================
+general  styles
+==================
+
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .crop-search-result {
+    margin-top: 3rem;
+    padding: 0.3rem 1rem;
+  }
+
+  .crop-search-result h1 {
+    font-size: 40px !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .k-onion {
+    padding: 0.3rem 1rem;
+    border: 1px solid #333;
+  }
+
+  .k-onion h2 {
+    color: #d35468;
+    margin-bottom: 10px;
+  }
+
+  .img-info {
+    width: 100%;
+    padding-bottom: 3px;
+  }
+
+  .crop-img img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .cust-interact {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .order-qnt {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    width: 50%;
+  }
+
+  .qnty-price1 {
+    background: #fd6e6e;
+    border-radius: 5px;
+    color: #2e2d2d;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  .order-qnt input {
+    width: 75%;
+    border: none;
+    background: #a3a1a1;
+    padding: 9px;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .btn {
+    padding: 5px;
+    background: #f86060;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bgscreen-top-head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+
+  .crop-search-result h1 {
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+  .k-onion {
+    padding: 0.3rem 1rem;
+    border: 1px solid #333;
+  }
+
+  .k-onion h2 {
+    color: #d35468;
+    margin-bottom: 10px;
+  }
+
+  .img-info {
+    display: flex;
+    margin-left: 50px;
+    border: 1px solid #a09d9d;
+    margin-bottom: 5px;
+  }
+
+  .crop-img {
+    width: 25%;
+  }
+
+  .crop-img img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .img-par {
+    width: 50%;
+    margin-left: 30px;
+    font-family: HelveticaNeue-Light Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  }
+
+  .img-par p {
+    line-height: 1.5;
+    width: 100%;
+  }
+
+  .cust-interact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+
+  .order-qnt {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    width: 15%;
+  }
+
+  .qnty-price1 {
+    background: #fd6e6e;
+    border-radius: 5px;
+    color: #2e2d2d;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  .order-qnt input {
+    width: 75%;
+    border: none;
+    background: #a3a1a1;
+    padding: 9px;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 25px;
+  }
+
+  .btn {
+    padding: 5px;
+    background: #f86060;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  /*
+  .k-onion {
+    border-top: 1px solid #d6d1d1;
+    border-bottom: 1px solid #cccbcb;
+    padding-bottom: 10px;
+  }
+  .k-onion h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: rgb(61, 61, 61);
+    cursor: pointer;
+  }
+  .img-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+  .crop-img {
+    border: 1px solid #bdbaba;
+    padding: 5px;
+  }
+  .par-qty-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    line-height: 1.5;
+    border: 1px solid #2c2c2c;
+    padding: 5px;
+  }
+  .qty-price {
+    background: #f86f6f;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    width: 30%;
+    align-self: center;
+  } */
+}
